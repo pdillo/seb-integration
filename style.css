@@ -319,6 +319,8 @@ input[type = submit]:hover {
 	color: white;
 }
 
+.turnaround a { color: white; }
+
 @media (max-width: 600px) {
 	.turnaround { padding: 20px 30px }
 }
@@ -370,8 +372,11 @@ input[type = submit]:hover {
 	border-bottom: none;
 }
 
-.faq .answer {
+.answer {
 	display: none;
+}
+.answer p {
+	margin-top: 0;
 }
 
 .faq-item.active .answer {

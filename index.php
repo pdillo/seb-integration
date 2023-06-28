@@ -108,7 +108,7 @@ EOT;
 			<p>To ensure a successful transition, please establish an account with SEB Professional North America. From September 30, 2023, onwards, you will be required to place any Wilbur Curtis order with SEB Professional. Therefore, SEB Professional will be required to be listed as a supplier for your organization. If you already have an account with SEB Professional there is no need to create an additional account. Going forward, you will merely purchase all of our brands through that single account.</p>
 			<p>This page will serve as a centralized hub for accessing information about the transition. So, please check back regularly. </p>
 			<p>Please expect further communications in the following weeks and months to verify your account setup, provide additional information, explain how your account will be affected, and keep you updated on any changes or revisions.</p>
-			<p>If you have questions, please reach out to our Customer Service Team at csrassistance@wilburcurtis.com</p>
+			<p>If you have questions, please reach out to our Customer Service Team at <a href="mailto:csrassistance@wilburcurtis.com" target="_blank">csrassistance@wilburcurtis.com</a></p>
 		</div>
 	</section>
 
