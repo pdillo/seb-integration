@@ -185,7 +185,7 @@ EOT;
 			<div class="subfooter-center">
 			<div class="subfooter-center-container">
 					<h3>Contact Us</h3>
-						<a href="#contact" class="btn">Lets Talk</a><br>
+						<a href="https://www.wilburcurtis.com/contact" target="_blank" class="btn">Lets Talk</a><br>
 					<a href="tel:8004216150">800-421-6150</a>
 				</div>
 			</div>

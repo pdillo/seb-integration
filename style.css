@@ -258,6 +258,12 @@ input[type = submit]:hover {
 	color: white;
 }
 
+@media (max-width: 1000px) {
+	.hero-heading {
+		font-size: 1.8em;
+	}
+}
+
 @media (max-width: 600px) {
 	.hero-heading {
 		width: 100%;
@@ -315,7 +321,7 @@ input[type = submit]:hover {
 
 .turnaround {
 	background: #0098CE;
-	padding: 60px 80px;
+	padding: 100px 80px 60px 80px;
 	color: white;
 }
 
@@ -348,7 +354,7 @@ input[type = submit]:hover {
 
 .faq {
 	background: #fbfbfb;
-	padding: 60px 80px;
+	padding: 100px 80px 60px 80px;
 }
 
 @media (max-width: 600px) {
