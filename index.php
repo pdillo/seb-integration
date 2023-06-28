@@ -128,21 +128,14 @@ EOT;
 			<div class="faq-item">
 				<a href="#" class="question"><strong>Do my Curtis credit terms transfer to SEB?</strong></a>
 				<div class="answer">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Yes – the terms of the account are not changing as a result of the project. Any changes to terms would be due to other business requirements.</p>
 				</div>
 			</div>
 
 			<div class="faq-item">
 				<a href="#" class="question"><strong>What do I need to do to apply to become a SEB account?</strong></a>
 				<div class="answer">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-			</div>
-
-			<div class="faq-item">
-				<a href="#" class="question"><strong>What do I need to do to apply to become a SEB account?</strong></a>
-				<div class="answer">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>They do not need to apply for a SEB account that is being migrated.</p>
 				</div>
 			</div>
 
@@ -150,6 +143,41 @@ EOT;
 				<a href="#" class="question"><strong>Is there a specific form or template for me to use to set up the SEB account?</strong></a>
 				<div class="answer">
 					<p>No need for them to set one up. They need to setup SEB as a Vendor/Supplier. In their own system.</p>
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<a href="#" class="question"><strong>Does the SEB application have a place for me to include my current Curtis account number?</strong></a>
+				<div class="answer">
+					<p>There will be no SEB application needed. Their account will be migrated, but they DO need to set up SEB Pro as a vendor in their system so they can order from us.</p>
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<a href="#" class="question"><strong>What is the end date for orders going directly to Curtis?</strong></a>
+				<div class="answer">
+					<p>Last date we will accept an order is 9/29/23 and the order must SHIP prior to Dec 31. No exceptions. Any orders that have request dates or large rollout orders that will move into Jan 2024 MUST be ordered on Oct 2 through SEB Pro.</p>
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<a href="#" class="question"><strong>Is there any impact on our service providers?</strong></a>
+				<div class="answer">
+					<p>Yes – for those that are common between both Curtis and SEB Pro today, there will be different rate structures based on skill requirements for Curtis repairs. For service providers who are not already an SP for SEB Pro they will need to be setup in the system so we can dispatch to them.</p>
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<a href="#" class="question"><strong>Is the process any different for customers that have not recently ordered?</strong></a>
+				<div class="answer">
+					<p>No - they need to do the same things.</p>
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<a href="#" class="question"><strong>How often will we reach out to the customers with updates? </strong></a>
+				<div class="answer">
+					<p>Frequently as new information is generated. We will continue to update as we get closer to the cut over time.</p>
 				</div>
 			</div>
 
