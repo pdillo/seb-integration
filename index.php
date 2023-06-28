@@ -83,9 +83,7 @@ EOT;
 			<div class="wrapper">
 				<ul>
 					<li><a href="#announcment" class="announcment">Announcement</a></li>
-					<li><a href="#status">Status Update</a></li>
 					<li><a href="#faq">FAQ</a></li>
-					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -111,15 +109,7 @@ EOT;
 			<p>If you have questions, please reach out to our Customer Service Team at <a href="mailto:csrassistance@wilburcurtis.com" target="_blank">csrassistance@wilburcurtis.com</a></p>
 		</div>
 	</section>
-
-	<section class="offerings" id="status">
-		<div class="wrapper">	
-			<h3>Status Update</h3>
-
-			<p><strong>September 16, 2023</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-		</div>
-	</section>
+	
 	<section class="faq" id="faq">
 		<div class="wrapper">	
 
@@ -183,27 +173,7 @@ EOT;
 
 		</div>	
 	</section>
-
-	<section class="contact" id="contact">
-		<div class="wrapper">
-			<h3>Contact Us</h3>
-			<div id="status-message">
-			<?php if (isset($response)) { 
-				echo $response['message']; 
-			}?>
-			</div>
-			<form class="form" id="contact-form" method="POST">
-				<input type="text" name="name" id="name" placeholder="Your Name"><br>
-				<input type="text" name="company-name" id="company-name" placeholder="Your Company's Name"><br>
-				<input type="email" name="email" id="email" placeholder="Email"><br>
-				<input type="text" name="phone" id="phone" placeholder="Phone Number"><br>
-
-				<textarea name="message" id="message" rows="8" cols="20">How can we help you?</textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-  	</section>
-
+	
 	<section class="subfooter">
 		<div class="wrapper">
 			<div class="subfooter-left">
@@ -237,39 +207,6 @@ EOT;
 	</main>
 
 	<script type="application/javascript">
-	const form = document.getElementById("contact-form")
-
-	function email(data) {
-		const message = document.getElementById("status-message")
-
-		fetch("", {
-			method: "POST",
-			body: data,
-			headers: {
-				'X-Requested-With' : 'XMLHttpRequest'
-			}
-		})
-		.then(response => response.json())
-		.then(response => {message.innerHTML = response.message})
-
-		.catch(error => {
-			error.json().then(response => {
-				message.innerHTML = response.message
-			})
-		})
-	}
-
-
-	const submitEvent = form.addEventListener("submit", (event) => {
-		event.preventDefault();
-
-		const formData = new FormData(form);
-
-		email(formData);
-
-		const hideform = document.getElementById("contact-form").style.display = 'none';
-	})
-
 	/*Sticky Header*/
 
 	window.addEventListener('scroll', function() {
