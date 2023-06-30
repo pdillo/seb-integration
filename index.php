@@ -74,7 +74,7 @@ EOT;
 <body>
 	<header class="header">
 		<div class="wrapper">
-			<a href="#" class="header-logo"><span>Curtis</span></a>
+			<a href="/" class="header-logo"><span>Curtis</span></a>
 			<h1 class="header-tagline">Perfecting the art of brewing since 1941.</h1>
 
 			<p class="header-right-phone">800-421-6150</p>
