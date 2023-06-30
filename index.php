@@ -125,42 +125,42 @@ EOT;
 			<div class="faq-item">
 				<a href="#" class="question"><strong>What do I need to do to apply to become a SEB account?</strong></a>
 				<div class="answer">
-					<p>They do not need to apply for a SEB account that is being migrated.</p>
+					<p>There’s no need to apply for a SEB Professional account that is being migrated.</p>
 				</div>
 			</div>
 
 			<div class="faq-item">
 				<a href="#" class="question"><strong>Is there a specific form or template for me to use to set up the SEB account?</strong></a>
 				<div class="answer">
-					<p>No need for them to set one up. They need to setup SEB as a Vendor/Supplier. In their own system.</p>
+					<p>No form needed but you will need to set up SEB Professional as a Vendor/Supplier within your own system.</p>
 				</div>
 			</div>
 
 			<div class="faq-item">
 				<a href="#" class="question"><strong>Does the SEB application have a place for me to include my current Curtis account number?</strong></a>
 				<div class="answer">
-					<p>There will be no SEB application needed. Their account will be migrated, but they DO need to set up SEB Pro as a vendor in their system so they can order from us.</p>
+					<p>There will be no SEB application needed. Your account will be migrated, but you DO need to set up SEB Professional as a vendor in your system so you can order from us.</p>
 				</div>
 			</div>
 
 			<div class="faq-item">
 				<a href="#" class="question"><strong>What is the end date for orders going directly to Curtis?</strong></a>
 				<div class="answer">
-					<p>Last date we will accept an order is 9/29/23 and the order must SHIP prior to Dec 31. No exceptions. Any orders that have request dates or large rollout orders that will move into Jan 2024 MUST be ordered on Oct 2 through SEB Pro.</p>
+					<p>The last date of order acceptance is 9/29/23 and must ship prior to 12/31/23.  Any orders that have request dates or large rollout orders that move into 2024 MUST be ordered by 10/2/23 through SEB Professional.</p>
 				</div>
 			</div>
 
 			<div class="faq-item">
 				<a href="#" class="question"><strong>Is there any impact on our service providers?</strong></a>
 				<div class="answer">
-					<p>Yes – for those that are common between both Curtis and SEB Pro today, there will be different rate structures based on skill requirements for Curtis repairs. For service providers who are not already an SP for SEB Pro they will need to be setup in the system so we can dispatch to them.</p>
+					<p>Yes – There will be different rate structures based on skill requirements regarding Curtis repairs for those that are currently both with Curtis and SEB Professional. Service providers not already with SEB Professional will need to be setup in the system so we can dispatch to them.</p>
 				</div>
 			</div>
 
 			<div class="faq-item">
 				<a href="#" class="question"><strong>Is the process any different for customers that have not recently ordered?</strong></a>
 				<div class="answer">
-					<p>No - they need to do the same things.</p>
+					<p>No, the process is still the same.</p>
 				</div>
 			</div>
 
