@@ -167,7 +167,7 @@ EOT;
 			<div class="faq-item">
 				<a href="#" class="question"><strong>How often will we reach out to the customers with updates? </strong></a>
 				<div class="answer">
-					<p>Frequently as new information is generated. We will continue to update as we get closer to the cut over time.</p>
+					<p>Frequently as new information is generated. We will continue to update as we get closer to the cut over time. In addition, reminders will be placed on all acknowledgements and invoices.</p>
 				</div>
 			</div>
 
