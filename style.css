@@ -352,6 +352,15 @@ input[type = submit]:hover {
 	}
 }
 
+.status-update {
+	background: #F5F5F5;
+	padding-bottom: 50px;
+}
+
+.status-update h3 { 
+	padding-top: 5%;
+}
+
 .faq {
 	background: #fbfbfb;
 	padding: 100px 80px 60px 80px;

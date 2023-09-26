@@ -1,66 +1,3 @@
-<?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-if (array_key_exists('email', $_POST)) {
-    date_default_timezone_set('Etc/UTC');
-    require 'vendor/autoload.php';
-    $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &&
-        strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
-
-    $mail = new PHPMailer();
-    $mail->isSMTP();
-    $mail->Host = 'mail.pdillo.com';
-    $mail->Port = 465;
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->SMTPAuth = true;
-    $mail->Username = 'p';
-    $mail->Password = 'OllieBeer01!';
-
-    $mail->setFrom('marketingassistance@wilburcurtis.com', 'Wilbur Curtis');
-    $mail->addAddress('marketingassistance@wilburcurtis.com', 'Wilbur Curtis Marketing');
-    $mail->addCC('ashley@flyover.co', 'Ashley Slater');
-    $mail->addCC('jp@flyover.co', 'JP Dubois');
-    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
-        $mail->Subject = 'NAFEM Contact Form';
-        $mail->isHTML(false);
-        $mail->Body = <<<EOT
-Email: {$_POST['email']}
-Name: {$_POST['name']}
-Company Name: {$_POST['company-name']}
-Phone: {$_POST['phone']}
-Message: {$_POST['message']}
-EOT;
-        if (!$mail->send()) {
-            if ($isAjax) {
-                http_response_code(500);
-            }
-
-            $response = [
-                "status" => false,
-                "message" => 'Sorry, something went wrong. Please try again later.'
-            ];
-        } else {
-            $response = [
-                "status" => true,
-                "message" => '<p>Message sent! Thanks for contacting us.</p>'
-            ];
-        }
-    } else {
-        $response = [
-            "status" => false,
-            "message" => 'Invalid email address, message ignored.'
-        ];
-    }
-
-    if ($isAjax) {
-        header('Content-type:application/json;charset=utf-8');
-        echo json_encode($response);
-        exit();
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -83,6 +20,8 @@ EOT;
 			<div class="wrapper">
 				<ul>
 					<li><a href="#announcment" class="announcment">Announcement</a></li>
+					<li><a href="#status-update">Status Update</a></li>
+
 					<li><a href="#faq">FAQ</a></li>
 				</ul>
 			</div>
@@ -107,6 +46,26 @@ EOT;
 			<p>This page will serve as a centralized hub for accessing information about the transition. So, please check back regularly. </p>
 			<p>Please expect further communications in the following weeks and months to verify your account setup, provide additional information, explain how your account will be affected, and keep you updated on any changes or revisions.</p>
 			<p>If you have questions, please reach out to our Customer Service Team at <a href="mailto:csrassistance@wilburcurtis.com" target="_blank">csrassistance@wilburcurtis.com</a></p>
+		</div>
+	</section>
+
+	<section class="status-update" id="status-update">
+		<div class="wrapper">
+			<h3>Status Update</h3>
+			<p><strong>September 25, 2023</strong> A communication was sent to all Curtis customers in late September stating as a reminder, starting October 2023, SEB Professional will streamline the ordering process for WMF, Schaerer, and Wilbur Curtis brands. This means you can now place orders for all three brands through a single system using one purchase order.</p>
+			<p>In order to continue a seamless business relationship with our existing customers, the important information below was included in this communication, and how this applies to your business:</p>
+			<p><strong>For Existing SEB Professional Customers</strong></p>
+			<ul>
+				<li>SEB Professional has moved to a new office. Please update your records to reflect our new address: 2600 Michelson Drive, Irvine, CA 92612</li>
+				<li>If you currently pay via check, please ensure all checks go to our Lockbox.</li>
+			</ul>
+			<p><strong>For Wilbur Curtis Customers moving to SEB Professional</strong></p>
+			<ul>
+				<li>We provided our W-9 and Banking Information/Lockbox for payments in the sent communication to ensure you can create SEB Professional as a new supplier in your systems</li>
+				<li>If you hold a tax-exempt status, we kindly requested the submission of an updated resale certificate designating SEB Professional North America as the seller. To facilitate this, we included a Multijurisdictional Tax Form in the email for customers who maintain resale certificates across multiple states. We asked for this to be sent to the AR-US@seb-professional.com inbox no later than October 15th to ensure accurate tax calculation.</li>
+			</ul>
+			<p>Be aware that all orders placed beginning October 2, 2023 must be sent to SEB Professional North America.</p>
+			<p>If you have questions, or missed the email with attachments needed, please reach out to our Customer Service Team at <a href="mailto:csrassistance@wilburcurtis.com" target="_blank">csrassistance@wilburcurtis.com</a>. We look forward to a long and successful partnership with all of our valued customers!</p>
 		</div>
 	</section>
 	
@@ -185,7 +144,6 @@ EOT;
 			<div class="subfooter-center">
 			<div class="subfooter-center-container">
 					<h3>Contact Us</h3>
-						<a href="https://www.wilburcurtis.com/contact" target="_blank" class="btn">Lets Talk</a><br>
 					<a href="tel:8004216150">800-421-6150</a>
 				</div>
 			</div>
